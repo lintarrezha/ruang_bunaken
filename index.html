@@ -1,398 +1,391 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruang Bunaken | RSSA</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init('nDGenwzz18XiZX4Er');
-        })();
+      (function () {
+        emailjs.init('nDGenwzz18XiZX4Er');
+      })();
     </script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image" href="/template/Rssalogo.webp">
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image" href="/template/Rssalogo.webp" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img src="/template/logo.png" alt="logo">
-                <span>Ruang Bunaken</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#" onclick="showPage('beranda')" class="nav-link">Beranda</a></li>
-                <li><a href="#" onclick="showPage('kritik-saran')" class="nav-link">Kritik dan Saran</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">
+          <img src="/template/logo.png" alt="logo" />
+          <span>Ruang Bunaken</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#" onclick="showPage('beranda')" class="nav-link">Beranda</a></li>
+          <li><a href="#" onclick="showPage('kritik-saran')" class="nav-link">Kritik dan Saran</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <!-- Halaman Beranda -->
-        <div id="beranda" class="page active">
-            <div class="hero">
-                <h1>Bunaken Education Center</h1>
-                <p>Media edukasi digital ini hadir untuk memberikan kemudahan dalaman penyampaian informasi tentang kesehatan yang bertujuan untuk meningkatkan kesehatan dan menurunkan angka infeksi pasien dan keluarga pasien</p>
+      <!-- Halaman Beranda -->
+      <div id="beranda" class="page active">
+        <div class="hero">
+          <h1>Bunaken Education Center</h1>
+          <p>Media edukasi digital ini hadir untuk memberikan kemudahan dalam penyampaian informasi tentang kesehatan yang bertujuan untuk meningkatkan kesehatan dan menurunkan angka infeksi pasien dan keluarga pasien</p>
 
-                <div class="hero-buttons">
-                    <a href="#" onclick="showPage('ruang-bunaken')" class="hero-btn primary">
-                        🏥 Ruang Bunaken
-                    </a>
-                    <a href="#" onclick="showPage('edukasi')" class="hero-btn">
-                        📚 Edukasi Kesehatan
-                    </a>
-                </div>
-            </div>
+          <div class="hero-buttons">
+            <a href="#" onclick="showPage('ruang-bunaken')" class="hero-btn primary"> 🏥 Ruang Bunaken </a>
+            <a href="#" onclick="showPage('edukasi')" class="hero-btn"> 📚 Edukasi Kesehatan </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halaman Ruang Bunaken (BARU) -->
+      <div id="ruang-bunaken" class="page">
+        <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Ruang Bunaken</h2>
+
+        <div class="room-info">
+          <div class="info-card">
+            <div class="icon">🏥</div>
+            <h3>Fokus Pelayanan</h3>
+            <p>pasien dengan penyakit kronis dan kompleks, khususnya yang berkaitan dengan sistem organ dalam.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="icon">🛏️</div>
+            <h3>Fasilitas</h3>
+            <p>terdiri dari 5 kamar perawatan, setiap kamar memiliki jumlah bed yang bervaritif berisi yaitu ada yang berisi 3 bed, 4 bed, dan 5 bed sesuai kelasnya masing-masing. Setiap kamar dilengkapi 1 kamar mandi.</p>
+          </div>
         </div>
 
-        <!-- Halaman Ruang Bunaken (BARU) -->
-        <div id="ruang-bunaken" class="page">
-            <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Ruang Bunaken</h2>
-
-            <div class="room-info">
-                <div class="info-card">
-                    <div class="icon">🏥</div>
-                    <h3>Fokus Pelayanan</h3>
-                    <p>pasien dengan penyakit kronis dan kompleks, khususnya yang berkaitan dengan sistem organ dalam.</p>
-                </div>
-
-                <div class="info-card">
-                    <div class="icon">🛏️</div>
-                    <h3>Fasilitas</h3>
-                    <p>terdiri dari 5 kamar perawatan, setiap kamar memiliki jumlah bed yang bervaritif berisi yaitu ada yang berisi 3 bed, 4 bed, dan 5 bed sesuai kelasnya masing-masing. Setiap kamar dilengkapi 1 kamar mandi.</p>
-                </div>
+        <div class="education-content">
+          <div class="facility-grid">
+            <div class="facility-item">
+              <div>
+                <img src="/template/foto1.jpg" alt="ruangbunakenirna1" style="width: 100%; max-width: 350px" />
+              </div>
             </div>
 
-            <div class="education-content">
-                <div class="facility-grid">
-                    <div class="facility-item">
-                        <div>
-                            <img src="/template/foto1.jpg" alt="ruangbunakenirna1" style="width: 100%; max-width: 350px" />
-                        </div>
-                    </div>
-
-                    <div class="facility-item">
-                        <div>
-                            <img src="/template/foto2.jpg" alt="ruangbunakenirna1" style="width: 100%; max-width: 350px" />
-                        </div>
-                    </div>
-                </div>
+            <div class="facility-item">
+              <div>
+                <img src="/template/foto2.jpg" alt="ruangbunakenirna1" style="width: 100%; max-width: 350px" />
+              </div>
             </div>
-
-            <div class="education-content">
-                <h3>Video Ruang Bunaken</h3>
-                <div class="video-container">
-                    <iframe width="520" height="180" src="https://www.youtube.com/embed/MpnLNeMCV98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <!-- Halaman Edukasi Menu -->
-        <div id="edukasi" class="page">
-            <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Menu Edukasi Kesehatan</h2>
+        <div class="education-content">
+          <h3>Video Ruang Bunaken</h3>
+          <div class="video-container">
+            <iframe width="520" height="180" src="https://www.youtube.com/embed/MpnLNeMCV98" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+          </div>
+        </div>
+      </div>
 
-            <div class="education-menu">
-                <div class="menu-card" onclick="showEducationContent('silam')">
-                    <h3>🗑️ Edukasi Silam</h3>
-                    <p>Pelajari cara pemilahan sampah medis dan non-medis yang benar untuk menjaga kebersihan dan keselamatan lingkungan rumah sakit.</p>
-                </div>
+      <!-- Halaman Edukasi Menu -->
+      <div id="edukasi" class="page">
+        <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Menu Edukasi Kesehatan</h2>
 
-                <div class="menu-card" onclick="showEducationContent('cuci-tangan')">
-                    <h3>🧼 Cuci Tangan 6 Langkah</h3>
-                    <p>Panduan lengkap teknik cuci tangan yang benar dengan 6 langkah sesuai standar WHO untuk mencegah infeksi.</p>
-                </div>
+        <div class="education-menu">
+          <div class="menu-card" onclick="showEducationContent('silam')">
+            <h3>🗑️ Edukasi Silam</h3>
+            <p>Pelajari cara pemilahan sampah medis dan non-medis yang benar untuk menjaga kebersihan dan keselamatan lingkungan rumah sakit.</p>
+          </div>
 
-                <div class="menu-card" onclick="showEducationContent('pencegahan-infeksi')">
-                    <h3>🛡️ Pencegahan Infeksi Keluarga</h3>
-                    <p>Tips dan strategi pencegahan infeksi yang dapat diterapkan di rumah untuk melindungi seluruh anggota keluarga.</p>
-                </div>
+          <div class="menu-card" onclick="showEducationContent('cuci-tangan')">
+            <h3>🧼 Cuci Tangan 6 Langkah</h3>
+            <p>Panduan lengkap teknik cuci tangan yang benar dengan 6 langkah sesuai standar WHO untuk mencegah infeksi.</p>
+          </div>
 
-                <div class="menu-card" onclick="showEducationContent('pencegahan-jatuh')">
-                    <h3>⚠️ Pencegahan Risiko Jatuh</h3>
-                    <p>Panduan keselamatan untuk mencegah kejadian jatuh pada pasien dan meningkatkan keamanan lingkungan.</p>
-                </div>
+          <div class="menu-card" onclick="showEducationContent('pencegahan-infeksi')">
+            <h3>🛡️ Pencegahan Infeksi Keluarga</h3>
+            <p>Tips dan strategi pencegahan infeksi yang dapat diterapkan di rumah untuk melindungi seluruh anggota keluarga.</p>
+          </div>
 
-                <div class="menu-card" onclick="showEducationContent('spektra')">
-                    <h3>🎥 Spektra (Pre & Post Operasi)</h3>
-                    <p>Video edukatif tentang persiapan sebelum operasi dan perawatan setelah operasi untuk hasil yang optimal.</p>
-                </div>
+          <div class="menu-card" onclick="showEducationContent('pencegahan-jatuh')">
+            <h3>⚠️ Pencegahan Risiko Jatuh</h3>
+            <p>Panduan keselamatan untuk mencegah kejadian jatuh pada pasien dan meningkatkan keamanan lingkungan.</p>
+          </div>
+
+          <div class="menu-card" onclick="showEducationContent('spektra')">
+            <h3>🎥 Spektra (Pre & Post Operasi)</h3>
+            <p>Video edukatif tentang persiapan sebelum operasi dan perawatan setelah operasi untuk hasil yang optimal.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halaman Edukasi Silam -->
+      <div id="edukasi-silam" class="page">
+        <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
+
+        <div class="education-content">
+          <h2>Edukasi Silam (Sampah Medis dan Non-Medis)</h2>
+
+          <h3>Sampah Medis</h3>
+          <p>
+            Sampah yang dihasilkan di ruang rawat inap terdiri dari sampah medis dan sampah non medis yang harus dipisahkan untuk mencegah penularan penyakit dan menjaga kebersihan lingkungan rumah sakit. Sampah medis adalah limbah yang
+            berasal dari tindakan pelayanan kesehatan dan dapat menularkan infeksi, Contoh sampah medis :
+          </p>
+          <ul>
+            <li>Jarum suntik dan alat medis tajam bekas pakai</li>
+            <li>Kasa dan perban bekas pakai yang terkontaminasi</li>
+            <li>Sarung tangan medis bekas pakai</li>
+            <li>Obat-obatan yang sudah kadaluarsa</li>
+            <li>Kantong darah dan produk darah bekas</li>
+          </ul>
+          <img src="/template/sampah_medis.jpg" alt="Contoh Sampah Medis" style="width: 100%; max-width: 600px" />
+
+          <h3>Sampah Non-Medis</h3>
+          <p>
+            Sampah non medis adalah limbah umum yang tidak mengandung bahan berbahaya, seperti sisa makanan, plastik kemasan, kertas, dan botol air mineral, yang dibuang ke tempat sampah berwarna hitam atau hijau. Pemisahan sampah ini
+            penting untuk melindungi pasien, keluarga, pengunjung, dan petugas kebersihan dari risiko cedera dan penularan infeksi, serta mendukung pengelolaan lingkungan rumah sakit yang aman dan sehat. Contoh sampah non medis :
+          </p>
+          <ul>
+            <li>Kertas dan karton bekas</li>
+            <li>Plastik kemasan makanan dan minuman</li>
+            <li>Sisa makanan dari dapur</li>
+            <li>Botol dan kaleng bekas</li>
+            <li>Sampah organik dari taman</li>
+          </ul>
+          <img src="/template/sampah_nonmedis.jpg" alt="Contoh Sampah Non-Medis" style="width: 100%; max-width: 600px" />
+
+          <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 10px; margin: 2rem 0">
+            <h4 style="color: #1565c0; margin-bottom: 1rem">💡 Tips Penting:</h4>
+            <ul style="margin-left: 1rem">
+              <li>Selalu gunakan wadah terpisah untuk sampah medis dan non-medis</li>
+              <li>Sampah medis harus dibuang dalam kantong kuning khusus</li>
+              <li>Sampah non-medis dapat didaur ulang sesuai jenisnya</li>
+              <li>Jangan pernah mencampurkan kedua jenis sampah</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halaman Cuci Tangan -->
+      <div id="edukasi-cuci-tangan" class="page">
+        <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
+
+        <div class="education-content">
+          <h2>Cuci Tangan 6 Langkah</h2>
+          <p>Cuci tangan adalah cara paling efektif untuk mencegah penyebaran infeksi. Ikuti 6 langkah WHO untuk hasil optimal.</p>
+
+          <a href="https://youtu.be/H1A5BnDyFFA?feature=shared" target="_blank" class="btn" style="display: inline-block; margin: 1rem 0">🎥 Video Cuci Tangan 6 Langkah</a>
+
+          <h3>Patuhi 6 Momen Keluarga</h3>
+          <ol>
+            <li>Sebelum dan sesudah mengunjungi pasien</li>
+            <li>Sebelum dan sesudah menyentuh pasien</li>
+            <li>Sebelum dan sesudah menggunakan toilet</li>
+            <li>Sebelum dan sesudah menyentuh dan memegang benda-benda di sekitar pasien dan ruangan</li>
+            <li>Sebelum dan sesudah mengganti popok, dan membantu aktivitas pasien</li>
+            <li>Setelah batuk dan bersin sebelum menyentuh mata, hidung, mulut</li>
+          </ol>
+
+          <h3>6 Langkah Cuci Tangan yang Benar</h3>
+          <ol>
+            <li>Tuangkan sabun cuci tangan,lalu gosok antar telapak tangan.</li>
+            <li>Gosok punggung tangan dengan telapak tangan.</li>
+            <li>Bersihkan sela sela jari dengan mengosok.</li>
+            <li>Usap ujung jari masing-masing tangan yang tergenggam secara bergantian.</li>
+            <li>Ibu jari di genggam lalu gosok dengan berputar.</li>
+            <li>Gosok ujung tangan dan jari dengan telapak.</li>
+          </ol>
+
+          <div style="background: #fff3cd; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; border-left: 5px solid #ffc107">
+            <h4 style="color: #856404; margin-bottom: 1rem">⏱️ Durasi mencuci tangan dengan sabun dan air mengalir adalah 40-60 detik</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halaman Pencegahan Infeksi -->
+      <div id="edukasi-pencegahan-infeksi" class="page">
+        <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
+
+        <div class="education-content">
+          <h2>Edukasi Pencegahan Infeksi pada Keluarga</h2>
+          <p>Pencegahan infeksi di lingkungan keluarga sangat penting untuk melindungi seluruh anggota keluarga dari penyakit menular.</p>
+
+          <a href="https://youtu.be/UKWIEtKmzE4?feature=shared" target="_blank" class="btn" style="display: inline-block; margin: 1rem 0">🎥 Video Edukasi Pencegahan Infeksi</a>
+
+          <h3>1. Menggunakan Masker dengan Benar</h3>
+          <ol>
+            <li>Selalu pakai masker saat di ruang perawatan, terutama di ruang isolasi atau ketika pasien mengalami batuk/pilek</li>
+            <li>Ganti masker jika sudah lembab atau setelah 4-6 jam pemakaian.</li>
+            <li>Jangan menyentuh bagian depan masker.</li>
+          </ol>
+
+          <h3>2. Tidak Menyentuh Luka, Selang, Infus, atau Alat Medis Pasien</h3>
+          <ol>
+            <li>Jangan memindahkan atau menyentuh alat medis tanpa izin tenaga kesehatan Pastikan semua anggota keluarga mendapat vaksinasi sesuai jadwal</li>
+            <li>Jika membantu pasien, pastikan tangan bersih dan gunakan sarung tangan bila diminta. Makan bergizi, olahraga teratur, dan istirahat cukup</li>
+            <li>Hindari kontak langsung dengan cairan dan darah dari tubuh pasien Batasi aktivitas di tempat ramai saat wabah penyakit menular</li>
+          </ol>
+
+          <h3>3. Tidak Membawa Barang yang Tidak Perlu ke Ruang Rawat</h3>
+          <ol>
+            <li>Kurangi barang pribadi seperti tas besar, bantal dari rumah, makanan yang tidak steril, atau barang elektronik yang tidak dibersihkan.</li>
+            <li>Benda dari luar bisa jadi pembawa kuman ke dalam ruang perawatan.</li>
+            <li>Bersihkan lingkungan di sekitar pasien setelah ada makanan dan minuman yang tumpah.</li>
+            <li>Sering membuka pintu, jendela supaya ada sirkulasi udara sehingga tidak pengap.</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- Halaman Pencegahan Jatuh -->
+      <div id="edukasi-pencegahan-jatuh" class="page">
+        <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
+
+        <div class="education-content">
+          <h2>Edukasi Pencegahan Risiko Jatuh Pasien</h2>
+
+          <p>Pencegahan risiko jatuh merupakan aspek penting dalam keselamatan pasien di rumah sakit. Jatuh dapat menyebabkan cedera serius dan memperpanjang masa perawatan pasien.</p>
+
+          <h3>1. Pantau Aktivitas Pasien</h3>
+          <ul>
+            <li>
+              Dampingi pasien ketika berjalan atau berpindah tempat, terutama ketika ingin ke kamar mandi. Bagi pasien dengan risiko jatuh tinggi (lansia, pasien pasca operasi, pasien dengan gangguan keseimbangan) perlu perhatian khusus
+              dalam melakukan aktivitas
+            </li>
+          </ul>
+
+          <h3>2. Pastikan Lingkungan Sekitar Bersih dan Rapi</h3>
+          <ul>
+            <li>Singkirkan barang-barang yang mengganggu di sekitar pasien. Bila ada tumpahan benda cair segera bersihkan, pastikan di lingkungan pasien selalu tetap kering</li>
+          </ul>
+
+          <h3>3. Penerangan yang Cukup</h3>
+          <ul>
+            <li>Pastikan kamar pasien cukup terang, terutama saat malam hari agar pasien bisa melihat dengan jelas.</li>
+          </ul>
+
+          <h3>4. Jangan Biarkan Pasien Bergerak Sendirian Bila Risiko Tinggi</h3>
+          <ul>
+            <li>Pastikan ada pendamping saat pasien ke kamar mandi atau berjalan di area rumah sakit</li>
+          </ul>
+
+          <h3>5. Pilih Alas Kaki Aman</h3>
+          <ul>
+            <li>Pilih alas kaki yang anti selip, supaya tidak mudah terpeleset dan pilih alas kaki yang sesuai ukuran untuk menghindari jatuh</li>
+          </ul>
+
+          <div style="background: #f8d7da; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; border-left: 5px solid #dc3545">
+            <h4 style="color: #721c24; margin-bottom: 1rem">🚨 Tindakan Darurat Jika Terjadi Jatuh:</h4>
+            <ul style="margin-left: 1rem; color: #721c24">
+              <li>Tetap tenang dan jangan panik</li>
+              <li>Periksa kondisi pasien dan jangan langsung memindahkan</li>
+              <li>Panggil bantuan medis segera</li>
+              <li>Dokumentasikan kejadian untuk evaluasi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halaman Spektra -->
+      <div id="edukasi-spektra" class="page">
+        <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
+
+        <div class="education-content">
+          <h2>Spektra (Pre dan Post Edukasi Operasi)</h2>
+          <p>Video edukatif untuk persiapan sebelum operasi dan perawatan setelah operasi. Informasi penting yang perlu diketahui pasien dan keluarga.</p>
+
+          <h3>Video Edukasi Pra Operasi</h3>
+          <p>Tonton video berikut untuk memahami persiapan yang diperlukan sebelum operasi:</p>
+
+          <div class="video-container">
+            <iframe width="520" height="180" src="https://www.youtube.com/embed/FOMG5EzAFTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+          </div>
+
+          <p>*jika video di atas tidak dapat diputar, silahkan akses melalui tombol berikut:</p>
+          <p style="margin: 1rem 0">
+            <a href="https://youtube.com/shorts/FOMG5EzAFTs?si=knvTojFbVUJOx4g-" target="_blank" class="btn">🎥 Tonton di YouTube</a>
+          </p>
+
+          <h3>Informasi Penting Pra Operasi</h3>
+          <ul>
+            <li>Puasa sebelum operasi sesuai instruksi dokter</li>
+            <li>Mandi dengan sabun antiseptik</li>
+            <li>Lepaskan perhiasan dan aksesoris</li>
+            <li>Informasikan riwayat alergi kepada tim medis</li>
+            <li>Siapkan mental dan dukungan keluarga</li>
+          </ul>
+
+          <h3>Perawatan Pasca Operasi</h3>
+          <ul>
+            <li>Ikuti instruksi dokter untuk perawatan luka</li>
+            <li>Konsumsi obat sesuai resep</li>
+            <li>Jaga kebersihan area operasi</li>
+            <li>Hindari aktivitas berat sesuai anjuran</li>
+            <li>Kontrol rutin sesuai jadwal</li>
+            <li>Segera hubungi dokter jika ada keluhan</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Halaman Kritik dan Saran -->
+      <div id="kritik-saran" class="page">
+        <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Kritik dan Saran</h2>
+
+        <div class="form-container">
+          <p style="text-align: center; margin-bottom: 2rem; color: #666">
+            Kami menghargai masukan Anda untuk terus meningkatkan kualitas layanan edukasi kami. Silakan sampaikan kritik, saran, atau pertanyaan Anda melalui formulir di bawah ini.
+          </p>
+
+          <form id="feedbackForm" onsubmit="submitFeedback(event)">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap *</label>
+              <input type="text" id="nama" name="nama" required />
             </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subjek">Subjek</label>
+              <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan Anda" />
+            </div>
+
+            <div class="form-group">
+              <label for="pesan">Pesan *</label>
+              <textarea id="pesan" name="pesan" required placeholder="Sampaikan kritik, saran, atau pertanyaan Anda di sini..."></textarea>
+            </div>
+
+            <button type="submit" onclick="sendMail()" class="btn" style="width: 100%; margin-top: 1rem">📧 Kirim Pesan</button>
+          </form>
+
+          <div id="successMessage" style="display: none; background: #d4edda; color: #155724; padding: 1rem; border-radius: 10px; margin-top: 1rem; text-align: center">
+            ✅ Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan segera merespons melalui email.
+          </div>
         </div>
 
-        <!-- Halaman Edukasi Silam -->
-        <div id="edukasi-silam" class="page">
-            <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
-
-            <div class="education-content">
-                <h2>Edukasi Silam (Sampah Medis dan Non-Medis)</h2>
-
-                <h3>Sampah Medis</h3>
-                <p>
-                    Sampah yang dihasilkan di ruang rawat inap terdiri dari sampah medis dan sampah non medis yang harus dipisahkan untuk mencegah penularan penyakit dan menjaga kebersihan lingkungan rumah sakit. Sampah medis adalah limbah yang berasal dari tindakan pelayanan
-                    kesehatan dan dapat menularkan infeksi, Contoh sampah medis :
-                </p>
-                <ul>
-                    <li>Jarum suntik dan alat medis tajam bekas pakai</li>
-                    <li>Kasa dan perban bekas pakai yang terkontaminasi</li>
-                    <li>Sarung tangan medis bekas pakai</li>
-                    <li>Obat-obatan yang sudah kadaluarsa</li>
-                    <li>Kantong darah dan produk darah bekas</li>
-                </ul>
-                <img src="/template/sampah_medis.jpg" alt="Contoh Sampah Medis" style="width: 100%; max-width: 600px" />
-
-                <h3>Sampah Non-Medis</h3>
-                <p>
-                    Sampah non medis adalah limbah umum yang tidak mengandung bahan berbahaya, seperti sisa makanan, plastik kemasan, kertas, dan botol air mineral, yang dibuang ke tempat sampah berwarna hitam atau hijau. Pemisahan sampah ini penting untuk melindungi pasien,
-                    keluarga, pengunjung, dan petugas kebersihan dari risiko cedera dan penularan infeksi, serta mendukung pengelolaan lingkungan rumah sakit yang aman dan sehat. Contoh sampah non medis :
-                </p>
-                <ul>
-                    <li>Kertas dan karton bekas</li>
-                    <li>Plastik kemasan makanan dan minuman</li>
-                    <li>Sisa makanan dari dapur</li>
-                    <li>Botol dan kaleng bekas</li>
-                    <li>Sampah organik dari taman</li>
-                </ul>
-                <img src="/template/sampah_nonmedis.jpg" alt="Contoh Sampah Non-Medis" style="width: 100%; max-width: 600px" />
-
-                <div style="background: #e3f2fd; padding: 1.5rem; border-radius: 10px; margin: 2rem 0">
-                    <h4 style="color: #1565c0; margin-bottom: 1rem">💡 Tips Penting:</h4>
-                    <ul style="margin-left: 1rem">
-                        <li>Selalu gunakan wadah terpisah untuk sampah medis dan non-medis</li>
-                        <li>Sampah medis harus dibuang dalam kantong kuning khusus</li>
-                        <li>Sampah non-medis dapat didaur ulang sesuai jenisnya</li>
-                        <li>Jangan pernah mencampurkan kedua jenis sampah</li>
-                    </ul>
-                </div>
+        <div class="education-content" style="margin-top: 3rem">
+          <h3>Informasi Kontak</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0">
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px">
+              <h4 style="color: #2c5aa0; margin-bottom: 1rem">📧 Email</h4>
+              <p>ruangbunakenirna1@gmail.com</p>
             </div>
+            <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px">
+              <h4 style="color: #2c5aa0; margin-bottom: 1rem">🏥 Alamat</h4>
+              <p>Jl. Jaksa Agung Suprapto Nomor 2<br />Malang, Jawa Timur 65111.</p>
+            </div>
+          </div>
         </div>
-
-        <!-- Halaman Cuci Tangan -->
-        <div id="edukasi-cuci-tangan" class="page">
-            <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
-
-            <div class="education-content">
-                <h2>Cuci Tangan 6 Langkah</h2>
-                <p>Cuci tangan adalah cara paling efektif untuk mencegah penyebaran infeksi. Ikuti 6 langkah WHO untuk hasil optimal.</p>
-
-                <a href="https://youtu.be/H1A5BnDyFFA?feature=shared" target="_blank" class="btn" style="display: inline-block; margin: 1rem 0">🎥 Video Cuci Tangan 6 Langkah</a>
-
-                <h3>Patuhi 6 Momen Keluarga</h3>
-                <ol>
-                    <li>Sebelum dan sesudah mengunjungi pasien</li>
-                    <li>Sebelum dan sesudah menyentuh pasien</li>
-                    <li>Sebelum dan sesudah menggunakan toilet</li>
-                    <li>Sebelum dan sesudah menyentuh dan memegang benda-benda di sekitar pasien dan ruangan</li>
-                    <li>Sebelum dan sesudah mengganti popok, dan membantu aktivitas pasien</li>
-                    <li>Setelah batuk dan bersin sebelum menyentuh mata, hidung, mulut</li>
-                </ol>
-
-                <h3>6 Langkah Cuci Tangan yang Benar</h3>
-                <ol>
-                    <li>Tuangkan sabun cuci tangan,lalu gosok antar telapak tangan.</li>
-                    <li>Gosok punggung tangan dengan telapak tangan.</li>
-                    <li>Bersihkan sela sela jari dengan mengosok.</li>
-                    <li>Usap ujung jari masing-masing tangan yang tergenggam secara bergantian.</li>
-                    <li>Ibu jari di genggam lalu gosok dengan berputar.</li>
-                    <li>Gosok ujung tangan dan jari dengan telapak.</li>
-                </ol>
-
-                <div style="background: #fff3cd; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; border-left: 5px solid #ffc107">
-                    <h4 style="color: #856404; margin-bottom: 1rem">⏱️ Durasi mencuci tangan dengan sabun dan air mengalir adalah 40-60 detik</h4>
-                </div>
-            </div>
-        </div>
-
-        <!-- Halaman Pencegahan Infeksi -->
-        <div id="edukasi-pencegahan-infeksi" class="page">
-            <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
-
-            <div class="education-content">
-                <h2>Edukasi Pencegahan Infeksi pada Keluarga</h2>
-                <p>Pencegahan infeksi di lingkungan keluarga sangat penting untuk melindungi seluruh anggota keluarga dari penyakit menular.</p>
-
-                <a href="https://youtu.be/UKWIEtKmzE4?feature=shared" target="_blank" class="btn" style="display: inline-block; margin: 1rem 0">🎥 Video Edukasi Pencegahan Infeksi</a>
-
-                <h3>1. Menggunakan Masker dengan Benar</h3>
-                <ol>
-                    <li>Selalu pakai masker saat di ruang perawatan, terutama di ruang isolasi atau ketika pasien mengalami batuk/pilek</li>
-                    <li>Ganti masker jika sudah lembab atau setelah 4-6 jam pemakaian.</li>
-                    <li>Jangan menyentuh bagian depan masker.</li>
-                </ol>
-
-                <h3>2. Tidak Menyentuh Luka, Selang, Infus, atau Alat Medis Pasien</h3>
-                <ol>
-                    <li>Jangan memindahkan atau menyentuh alat medis tanpa izin tenaga kesehatan Pastikan semua anggota keluarga mendapat vaksinasi sesuai jadwal</li>
-                    <li>Jika membantu pasien, pastikan tangan bersih dan gunakan sarung tangan bila diminta. Makan bergizi, olahraga teratur, dan istirahat cukup</li>
-                    <li>Hindari kontak langsung dengan cairan dan darah dari tubuh pasien Batasi aktivitas di tempat ramai saat wabah penyakit menular</li>
-                </ol>
-
-                <h3>3. Tidak Membawa Barang yang Tidak Perlu ke Ruang Rawat</h3>
-                <ol>
-                    <li>Kurangi barang pribadi seperti tas besar, bantal dari rumah, makanan yang tidak steril, atau barang elektronik yang tidak dibersihkan.</li>
-                    <li>Benda dari luar bisa jadi pembawa kuman ke dalam ruang perawatan.</li>
-                    <li>Bersihkan lingkungan di sekitar pasien setelah ada makanan dan minuman yang tumpah.</li>
-                    <li>Sering membuka pintu, jendela supaya ada sirkulasi udara sehingga tidak pengap.</li>
-                </ol>
-            </div>
-        </div>
-
-        <!-- Halaman Pencegahan Jatuh -->
-        <div id="edukasi-pencegahan-jatuh" class="page">
-            <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
-
-            <div class="education-content">
-                <h2>Edukasi Pencegahan Risiko Jatuh Pasien</h2>
-
-                <p>Pencegahan risiko jatuh merupakan aspek penting dalam keselamatan pasien di rumah sakit. Jatuh dapat menyebabkan cedera serius dan memperpanjang masa perawatan pasien.</p>
-
-                <h3>1. Pantau Aktivitas Pasien</h3>
-                <ul>
-                    <li>
-                        Dampingi pasien ketika berjalan atau berpindah tempat, terutama ketika ingin ke kamar mandi. Bagi pasien dengan risiko jatuh tinggi (lansia, pasien pasca operasi, pasien dengan gangguan keseimbangan) perlu perhatian khusus dalam melakukan aktivitas
-                    </li>
-                </ul>
-
-                <h3>2. Pastikan Lingkungan Sekitar Bersih dan Rapi</h3>
-                <ul>
-                    <li>Singkirkan barang-barang yang mengganggu di sekitar pasien. Bila ada tumpahan benda cair segera bersihkan, pastikan di lingkungan pasien selalu tetap kering</li>
-                </ul>
-
-                <h3>3. Penerangan yang Cukup</h3>
-                <ul>
-                    <li>Pastikan kamar pasien cukup terang, terutama saat malam hari agar pasien bisa melihat dengan jelas.</li>
-                </ul>
-
-                <h3>4. Jangan Biarkan Pasien Bergerak Sendirian Bila Risiko Tinggi</h3>
-                <ul>
-                    <li>Pastikan ada pendamping saat pasien ke kamar mandi atau berjalan di area rumah sakit</li>
-                </ul>
-
-                <h3>5. Pilih Alas Kaki Aman</h3>
-                <ul>
-                    <li>Pilih alas kaki yang anti selip, supaya tidak mudah terpeleset dan pilih alas kaki yang sesuai ukuran untuk menghindari jatuh</li>
-                </ul>
-
-                <div style="background: #f8d7da; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; border-left: 5px solid #dc3545">
-                    <h4 style="color: #721c24; margin-bottom: 1rem">🚨 Tindakan Darurat Jika Terjadi Jatuh:</h4>
-                    <ul style="margin-left: 1rem; color: #721c24">
-                        <li>Tetap tenang dan jangan panik</li>
-                        <li>Periksa kondisi pasien dan jangan langsung memindahkan</li>
-                        <li>Panggil bantuan medis segera</li>
-                        <li>Dokumentasikan kejadian untuk evaluasi</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Halaman Spektra -->
-        <div id="edukasi-spektra" class="page">
-            <button class="btn back-btn" onclick="showPage('edukasi')">← Kembali ke Menu Edukasi</button>
-
-            <div class="education-content">
-                <h2>Spektra (Pre dan Post Edukasi Operasi)</h2>
-                <p>Video edukatif untuk persiapan sebelum operasi dan perawatan setelah operasi. Informasi penting yang perlu diketahui pasien dan keluarga.</p>
-
-                <h3>Video Edukasi Pra Operasi</h3>
-                <p>Tonton video berikut untuk memahami persiapan yang diperlukan sebelum operasi:</p>
-
-                <div class="video-container">
-                    <iframe width="520" height="180" src="https://www.youtube.com/embed/FOMG5EzAFTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-                </div>
-
-                <p>*jika video di atas tidak dapat diputar, silahkan akses melalui tombol berikut:</p>
-                <p style="margin: 1rem 0">
-                    <a href="https://youtube.com/shorts/FOMG5EzAFTs?si=knvTojFbVUJOx4g-" target="_blank" class="btn">🎥 Tonton di YouTube</a>
-                </p>
-
-                <h3>Informasi Penting Pra Operasi</h3>
-                <ul>
-                    <li>Puasa sebelum operasi sesuai instruksi dokter</li>
-                    <li>Mandi dengan sabun antiseptik</li>
-                    <li>Lepaskan perhiasan dan aksesoris</li>
-                    <li>Informasikan riwayat alergi kepada tim medis</li>
-                    <li>Siapkan mental dan dukungan keluarga</li>
-                </ul>
-
-                <h3>Perawatan Pasca Operasi</h3>
-                <ul>
-                    <li>Ikuti instruksi dokter untuk perawatan luka</li>
-                    <li>Konsumsi obat sesuai resep</li>
-                    <li>Jaga kebersihan area operasi</li>
-                    <li>Hindari aktivitas berat sesuai anjuran</li>
-                    <li>Kontrol rutin sesuai jadwal</li>
-                    <li>Segera hubungi dokter jika ada keluhan</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Halaman Kritik dan Saran -->
-        <div id="kritik-saran" class="page">
-            <h2 style="text-align: center; color: #2c5aa0; margin-bottom: 2rem; font-size: 2.5rem">Kritik dan Saran</h2>
-
-            <div class="form-container">
-                <p style="text-align: center; margin-bottom: 2rem; color: #666">
-                    Kami menghargai masukan Anda untuk terus meningkatkan kualitas layanan edukasi kami. Silakan sampaikan kritik, saran, atau pertanyaan Anda melalui formulir di bawah ini.
-                </p>
-
-                <form id="feedbackForm" onsubmit="submitFeedback(event)">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap *</label>
-                        <input type="text" id="nama" name="nama" required />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subjek">Subjek</label>
-                        <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan Anda" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pesan">Pesan *</label>
-                        <textarea id="pesan" name="pesan" required placeholder="Sampaikan kritik, saran, atau pertanyaan Anda di sini..."></textarea>
-                    </div>
-
-                    <button type="submit" onclick="sendMail()" class="btn" style="width: 100%; margin-top: 1rem">📧 Kirim Pesan</button>
-                </form>
-
-                <div id="successMessage" style="display: none; background: #d4edda; color: #155724; padding: 1rem; border-radius: 10px; margin-top: 1rem; text-align: center">
-                    ✅ Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan segera merespons melalui email.
-                </div>
-            </div>
-
-            <div class="education-content" style="margin-top: 3rem">
-                <h3>Informasi Kontak</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0">
-                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px">
-                        <h4 style="color: #2c5aa0; margin-bottom: 1rem">📧 Email</h4>
-                        <p>ruangbunakenirna1@gmail.com</p>
-                    </div>
-                    <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 10px">
-                        <h4 style="color: #2c5aa0; margin-bottom: 1rem">🏥 Alamat</h4>
-                        <p>Jl. Jaksa Agung Suprapto Nomor 2<br />Malang, Jawa Timur 65111.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Ruang Bunaken. <br />Kelompok 16,17,18 UMM Ners 31.</p>
+      <p>&copy; 2025 Ruang Bunaken. <br />Kelompok 16,17,18 UMM Ners 31.</p>
     </footer>
 
-    <script src="/js/script.js">
-    </script>
-
-</body>
-
+    <script src="/js/script.js"></script>
+  </body>
 </html>
